@@ -1,0 +1,23 @@
+RewriteEngine on
+
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\.html$ /$1 [L,R=301]
+
+<filesMatch ".(js)$">
+Header set Access-Control-Allow-Origin "*"
+</filesMatch>
+
+# One year for image and js files
+<filesMatch ".(jpg|jpeg|png|svg|gif|ico|js)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+
+# One day for css
+<filesMatch ".(css)$">
+Header set Cache-Control "max-age=604800, public"
+</filesMatch>

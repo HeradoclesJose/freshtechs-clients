@@ -1,1 +1,1 @@
-Freshtechs
+FreshTechs

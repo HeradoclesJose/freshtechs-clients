@@ -1,0 +1,538 @@
+/*FONT*/
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
+
+body{
+    min-height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f2f2f2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+
+.text-faded {
+  color: #4e4646;
+}
+
+/*HR*/
+
+hr{
+    background-color: #85dd31;
+    max-width: 90px;
+    height: 1.8px;
+    border-width: 0px;
+}
+hr.light{
+    height: 1.2px;
+}
+hr.large{
+        max-width: 300px;
+        height: 1.2px;
+        margin: auto;
+    }
+@media screen and (min-width:600px){
+    hr.large{
+        max-width: 580px;
+        height: 1.2px;
+        margin: auto;
+    }
+}
+
+.call_icon{
+    color:#85dd31;
+    margin-right: 15px;
+    -webkit-text-stroke: 1.2px green;
+}
+.green_ft{
+    background-color: #85dd31!important;
+    font-weight: bold!important;
+    color: black;
+}
+
+.btn_duda{
+    font-weight: bold;
+    background-color: #85dd31!important;
+    height: auto;
+    min-height: 20px;
+    line-height: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.btn_nav{
+    cursor: default;
+    padding: 8px !important;
+    display: flex !important;
+    line-height: 30px !important;
+    margin-top: 8px !important;
+    margin-left: 15px !important;
+}
+.small_text{
+    font-size: 1.3rem !important;
+}
+
+.banner-home{
+    height: 100vh;
+    background: url('../images/Banners/proveedor_de_internet.jpg');
+    background-size: cover;
+}
+
+.banner-nosotros-1{
+    background: url('../images/Banners/nosotros1.jpg');
+}
+
+.banner-nosotros-2{
+    background: url('../images/Banners/nosotros2.jpg');
+}
+
+.banner-nosotros-3{
+    background: url('../images/Banners/nosotros3.jpg');
+}
+
+.banner-planes{
+    background: url('../images/Banners/servicios1.jpg');
+}
+
+.banner-contacto{
+    background: url('../images/Banners/contactanos.jpg');
+}
+
+.banner-nosotros-1, .banner-nosotros-2, .banner-nosotros-3, .banner-planes, .banner-contacto, .banner-FAQ{
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+/*ELEMENTOS HTML*/
+
+figure {
+    margin: 0;
+    display: inline;
+}
+
+small {
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6{
+    display: block;
+}
+
+h5{
+    font-weight: bold;
+}
+
+h6, p {
+    font-size: 1.4rem;
+    line-height: 1.1;
+}
+
+iframe{
+    border-width: 0px;
+}
+
+/*DISPOSITIVOS MAS PEQUEÑOS*/
+
+/*MATERIALIZE*/
+
+.container, .container-faq {
+    width: 100%;
+    height: 100%;
+    max-width: 100% !important;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+nav .button-collapse {
+    margin:0px; 
+}
+
+html, nav, figure, nav .nav-wrapper a, .row, .container-nosotros, .algo, main.nosotros{
+    height: 100%;
+}
+
+nav .nav-wrapper{
+    height: auto;
+    justify-content: space-between;
+}
+
+ul.browser-default {
+    padding-left: 10%;
+}
+
+.valign-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.center {
+    position: relative;
+}
+
+nav ul li a:hover{
+    box-shadow: inset 0 -3px 0 0 #85dd31;
+}
+
+textarea.materialize-textarea {
+  min-height: 1rem;
+  height: 1rem;
+}
+
+/*CLASES PROPIAS*/
+
+/*HEADDER*/
+.header-principal {
+    height: 64px;
+    background-color: #ffffff;
+}
+
+.header-logo img.responsive-img {
+    height: 37px;
+}
+
+.sidebar-img {
+    padding: 18px 15px 0px 15px;
+}
+
+#nav-mobile li {
+    border-top: solid grey 1px;
+}
+
+#nav-mobile li:last-child {
+    border-bottom: solid grey 1px;
+}
+
+/*MAIN*/
+
+/*FOOTER*/
+footer{
+    bottom: -185px;
+    min-width:100%; 
+}
+
+.footer-principal{
+    background-color: #191919;
+}
+.page-footer{
+    background-color: #191919;
+}
+
+.footer-logo, .footer-logo img.responsive-img, .card-logo, .card-logo img.responsive-img{
+    width: 235px;
+}
+
+.redes-sociales {
+    margin:15px 10px;
+    height: 40px;
+    width: 40px;
+}
+
+svg:hover path {
+    fill: #85dd31;
+}
+
+svg:hover polygon {
+    fill: #85dd31;
+}
+
+/*OTROS*/
+.azul-oscuro {
+    background-color: #f8f8f8 !important;
+}
+
+.azul-mas-oscuro {
+    background-color: lightslategray;
+}
+
+.row.non-separation {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.map_about_us {
+    width: 500px;
+    height: 250px;
+}
+.map-home {
+    height: 450px;
+}
+.container-nosotros, .container-nosotros .container.nosotros {
+    height: 400px;
+}
+
+.row .col.nosotros, .container.nosotros{
+    max-height: 350px; 
+    min-height: 250px;
+}
+
+.hideb, .hideb-2{
+    display: block;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.show{
+    opacity: 1;
+}
+
+.redes-contacto .valign-wrapper, .redes-contacto .valign-wrapper .redes-sociales{
+    justify-content: left;
+    margin:2px 5px;
+}
+
+.complete-container{
+    width: 100%;
+    height: 100%;
+}
+
+.traslate-text{
+    transform: translateY(-100px);
+}
+
+.right-align-text, .left-align-text{
+    text-align: center;
+}
+
+.row{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.shadow-text{
+    text-shadow: 5px 4px 6px #000000;
+}
+
+.side-nav{
+    background-color: #ffffff;
+}
+
+.default, div.row.default{
+    margin-bottom: 2rem;
+}
+
+.us-icon{
+    width: 88px; 
+    height: 88px;
+}
+
+.us-icon.cont{
+    width: 50px; 
+    height: 50px;
+}
+
+.us-icon.navb{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+p.cont{
+    margin: 15px 0 15px 0;
+    width: 100%;
+}
+
+.paddintop{
+    padding-top: 20px;
+}
+.header_no_collap{
+    display: block;
+    -webkit-tap-highlight-color: transparent;
+    min-height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.body_no_collap{
+    display: block;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+.content-nosotros-3 {
+        height: 340px;
+    }
+/*DISPOSITIVOS MAS GRANDES*/
+
+@media screen and (max-width:600px){
+    
+    .banner-home{
+        height: 500px !important;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    
+}
+
+
+@media screen and (min-width:601px){
+
+    .map_about_us {
+        height: 300px;
+        padding: 0px 5%;
+    }
+
+    .map-home {
+        height: 520px;
+    }
+
+    .banner-home{
+        height: 60vh;
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    .more-section{
+        height: 42vh;
+    }
+
+    .banner-nosotros-1, .banner-nosotros-2, .banner-nosotros-3, .banner-planes, .banner-contacto, .banner-FAQ{
+        height: 500px;
+    }
+
+    .container-nosotros, .container-nosotros .container.nosotros {
+        height: 350px;
+    }   
+
+    .hideb, .hideb-2{
+        display: inline;
+        margin-top: 0px;
+        position: absolute;
+        right: 5px;
+    }
+
+    .content-nosotros-3 {
+        height: 310px;
+    }
+
+    .container-faq {
+        padding: 0 20px;
+    }
+
+    .us-icon.right-align{
+        float: right;
+    }
+
+    .right-align-text.cont, .left-align-text.cont{
+        text-align: left;
+    }
+
+    p.cont{
+        margin: 0 0 0 15px;
+        width: auto;
+    }
+
+}
+
+@media screen and (min-width:993px){
+
+    .hide_hamb{
+        display: none;
+    }
+    .hideb, .hideb-2{
+        right: 120px;
+    }
+
+    .container, .container-faq {
+        width: 90%;
+    }
+
+    .content-nosotros-2 {
+        height: 350px;
+    /*nosotros*/
+    }
+
+    .content-nosotros-3 {
+        height: 280px;
+    }
+
+    .col.s12.m12.l5.xl5.nosotros {
+        padding: 0px;
+        height: 100%;
+        /*nosotros*/
+    }
+
+    .container-nosotros{
+        position: absolute;
+        width: 100%;
+    }
+
+    footer{
+        bottom: -106px;
+    }
+
+    .footer-logo, .footer-logo img.responsive-img {
+        float: left;
+    }
+
+    .social-wrapper {
+        float: right;
+    }
+
+    .traslate-text{
+        transform: translateY(0px);
+    }
+
+    .right-align-text{
+        text-align: right;
+    }
+
+    .left-align-text{
+        text-align:left;
+    }
+
+}
+
+@media screen and (min-width:1201px){
+
+}
+
+@media screen and (min-width:2000px){
+    .footer-nosotros{
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width:1700px){
+    .footer-faq{
+        bottom: -106px;
+    }
+}
+
+@media screen and (min-width:2601px){
+    .footer-servicios{
+        bottom: 0;
+    }
+}
+
+.input-field label:not(.label-icon).active {
+    transform: translateY(-60%);
+    padding-left: 15px;
+}
+
+input[type=text]:not(.browser-default), input[type=email]:not(.browser-default){
+    border: 1px solid #9e9e9e;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.input-field label{
+    padding-left: 15px;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]){
+    border-color: #26a69a;
+}
